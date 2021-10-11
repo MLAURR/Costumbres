@@ -14,6 +14,16 @@ body{
 .main{
   background-image: url("./assets/ensayos.jpg");
 }*/
+.contenedor--botonhamburguesa {
+ margin-top: 12px;
+ margin-right: 3px;
+ display: none;
+ }
+.contenedor--botonhamburguesa img{
+ width: 40px;
+ height: 40px;
+ 
+}
 .contenedor--navegacion {
   background: linear-gradient(
     100deg,
@@ -249,4 +259,156 @@ background: linear-gradient(0deg, rgba(249,249,249,0.5021358885351015) 0%, rgba(
   .nosotros--contenedor--contenido{
     flex-direction: column;
   }
+  .nosotros--contenedor--contenido{
+    width: 400px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nosotros--imagen img{
+    width: 400px;
+  }
+  .eventos{
+    flex-direction: column;
+    justify-content: center;
+  }
+  .nosotros--parrafo{
+    margin-top: 10px;
+  }
+  .eventos--contenedor--contenido--imagen img{
+    width: 300px; 
+    padding: 0px;
+  }  
+  .eventos--contenedor--contenido--descripcion-parrafo{
+    margin-top: 5px;
+    padding: 0px 20px;
+  }
+  .eventos--contenedor--contenido--imagen.eventos--mobile img {
+    width: 230px;
+  } 
+  .footer--parte1{
+    flex-direction: column;
+    margin-top: 330px;
+  }
+  .footer--parte1--elemento{
+    margin-top: 10px;
+  }
+  .contenedor--banderaguadalupe,.contenedor--banderaperu{
+    display: none;
+  }
+}
+.menu{
+  transition: all 500ms ease;
+  display: flex !important;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(0deg, rgba(0,0,0,0.7021358885351015) 0%, rgba(0,0,0,0.71530115464154416) 100%);
+  margin-top: 70px;  
+  
+}
+.menu ul{
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+@media(max-width:788px){
+  .contenedor--botonhamburguesa{
+    display: inline;
+    margin-right: 25px;
+  } 
+  .navegacion--links--contenedor{
+    display: none;
+  } 
+}
+@media(max-width:770px){
+  body{
+   width: 100vw !important;
+  }
+  footer{
+    width: 100vw;
+  }
+  .main{
+    margin-bottom: 10px;
+  }
+  .contenedor--botonhamburguesa{
+    display: inline;
+  }
+  .contenedor--banderaguadalupe,.contenedor--banderaperu{
+    display: none;
+  }
+  .banner--contenedor--categorias{
+    width: 100vw;
+  }
+  .navegacion--links--contenedor{
+    display: none;
+  }
+  .footer--parte1--elemento img{
+    width: 50px;
+    height: 50px;
+  }
+  .footer--parte1{
+    margin: 0px;
+    margin-top: 100px;
+  }
+  .eventos{
+    width: 90%;
+    margin: 20px;   
+  }
+  .eventos--contenedor--contenido--descripcion-parrafo{
+    font-size: 14px;
+  }
+  .horarios--contenedor--contenido,.requisitos--contenedor--contenido{
+  width: 300px;
+  /*height:100px;*/
+  }
+  .horarios--contenido--titulo h1,.requisitos--contenido--titulo h1{
+    font-size: 14px;
+  }
+  .requisitos--contenedor--contenido{
+    margin-top: 0px;
+  }
+  .requisitos--contenido--parrafo p,.horarios--contenido--parrafo p{
+    margin:0px ;
+    margin-top: 10px;
+    font-size: 13px;
+  }
+  .nosotros--titulo h1{
+    text-align: center;
+    font-size: 16px;
+  }
+  .nosotros--contenedor--contenido{
+    flex-direction: column;
+  }
+  .nosotros--contenedor--contenido{
+    width: 220px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .nosotros--imagen img{
+    width: 300px;
+  }
+  .nosotros--parrafo {
+    width: 100%;
+  }
+  .nosotros--parrafo p{
+    text-align: center;
+    font-size: 14px;
+  }
+.footer--parte1--elemento h1{
+  font-size: 15px;
+}
+.footer--parte1--elemento h4{
+  font-size: 10px;
+}
+.banner--contenedor--carrusel{
+  height: 250px;
+  width: 100vw;
+}
+.banner--contenedor--carrusel img{
+  height: 100%;
+  width: 100%;
+}
 }
